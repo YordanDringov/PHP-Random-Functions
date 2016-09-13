@@ -1,0 +1,9 @@
+function getOS()
+	{
+  	  $browser = $_SERVER['HTTP_USER_AGENT'];
+  	  if(preg_match('/Linux/',$browser)) $os = 'Linux';
+  	  elseif(preg_match('/Win/',$browser)) $os = 'Windows';
+  	  elseif(preg_match('/Mac/',$browser)) $os = 'Mac';
+    	else $os = 'UnKnown';
+   	 return $os;
+	}
