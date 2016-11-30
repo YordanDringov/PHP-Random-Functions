@@ -7,3 +7,4 @@ $b = new Cat('Montesqe');
 $a->makeSound();
 echo '<br>';
 $b->makeSound();
+?>
